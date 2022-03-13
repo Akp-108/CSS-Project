@@ -1,89 +1,161 @@
-
 .parent{
     filter: blur(5px);
 }
-.box{
+.wcontainer1{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    color: black;
+    /* margin-left: 100px; */
+}
+.wbox{
     height: 300px;
     width: 200px;
-    display: inline-block;
-    /* margin: 100px; */
-    text-align: center;
-   border-radius: 10px;
-   margin-left: 200px;
     border: 2px solid red;
-    display: inline-block;
-    box-shadow: 10px 10px 15px gray ;
-
-
-}
-.box1{
+    margin-top: 200px;
+    box-sizing: border-box;
+    padding: 10px;
     text-decoration: none;
-    margin-left: 200px;
-    border: 2px solid red;
-    display: inline-block;
-}
-.box2{
-    margin-left: 100px;
-    border: 2px solid red;
-    display: inline-block;
-}
-.box3{
-    margin-left: 100px;
-    border: 2px solid red;
-    display: inline-block;
-}
-.t{
-    margin-bottom: 20px;
-    font-size: 40px;
-    margin-left: 200px;
-    margin-top: 100px;
-}
-span{
-    color: turquoise;
-}
-.a{
-    margin-left: 200px;
-}
-.b{
-    display: inline-block;
-    position: absolute;
-    top: 100px;
-    right: 350px;
-    font-size: 30px;
-   
-}
-i{
     color: red;
-}
-.z{
-    color:red;
-    text-decoration: line-through;
-}
-p{
-    text-align: left;
-}
-.pop{
-    color: red;
-    background-color: white;
-    width: 250px;
-    height: 150px;
-    border: 2px solid red;
-    display: inline-block;
     text-align: center;
-    box-shadow: 5px 5px 5px gray;
-    border-radius: 6px;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-left: 150px;
+    box-shadow: 5px 5px 10px gray;
+}
+.head{
+    font-size: 40px;
+    display: inline-block;
+    font-weight: bold;
+    /* margin-top: 130px;
+    margin-left: 150px; */
     position: absolute;
-    top: 200px;
-    left: 500px;
-    z-index: +1;
-    
+    top: 130px;
+    left: 150px;
+    text-decoration: none;
+}
+.head2{
+    font-size: 30px;
+    font-weight: bold;
+    color: aqua;
+    display: inline-block;
+    position: absolute;
+    top: 130px;
+    left: 950px;
 }
 .button{
-    background-color: green;
-    color: white;
-    position: relative;
-    padding: 5px;
+    display: inline-block;
+    color: red;
+    font-size: 40px;
+    position: absolute;
+    top: 130px;
+    left: 900px;
+}
+.a{
+    font-size: 18px;
+    text-decoration: line-through;
+}
+.b{
+    text-align: left;
+    color: black;
+    font-size: 15px;
+}
+.wbox4{
+    display: none;
+}
+.index{
+    display: inline-block;
+    position: absolute;
+    top: 250px;
+    left: 480px;
+    width: 300px;
+    height: 150px;
+    border: 2px solid red;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px gray;
+    text-align: center;
+    color: red;
+}
+
+@media (min-width:320px) and (max-width:480px){
+    .wcontainer1{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        color: black;
+        margin-top: 50px;
+    }
+    .wbox{
+        height: 50px;
+        width: 300px;
+        border: 2px solid red;
+        margin-top: 50px;
+        box-sizing: border-box;
+        padding: 10px;
+        text-decoration: none;
+        color: aqua;
+        border-radius: 10px;
+        margin-left: 15px;
+        box-shadow: 5px 5px 10px gray;
+    }
+    .head{
+        font-size: 40px;
+        display: inline-block;
+        font-weight: bold;
+        /* margin-top: 130px;
+        margin-left: 150px; */
+        position: absolute;
+        top: 15px;
+        left: 30px;
+        text-decoration: none;
+    }
+  .a{
+      display: none;
+  }
+  .b{
+      display: none;
+  }
+  hr{
+      display: none;
+  }
+  .button{
+    display: inline-block;
+    color: red;
+    font-size: 40px;
+    position: absolute;
+    top: 15px;
+    left: 280px;
+}
+.wbox4{
+    height: 50px;
+    width: 300px;
+    border: 2px solid red;
+    margin-top: 50px;
     box-sizing: border-box;
-    top:20px ;
-    border: 20px;
+    padding: 10px;
+    text-decoration: none;
+    color: aqua;
+    border-radius: 10px;
+    margin-left: 15px;
+    box-shadow: 5px 5px 10px gray;
+}
+.index{
+    display: inline-block;
+    position: absolute;
+    top: 150px;
+    left: 30px;
+    width: 300px;
+    height: 150px;
+    border: 2px solid red;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px gray;
+    text-align: center;
+    color: red;
+}
+.h2{
+    display: none;
+}
+ 
 }
